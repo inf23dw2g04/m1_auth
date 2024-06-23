@@ -291,7 +291,7 @@ const swaggerDefinition = {
       },
       post: {
         tags: ["TaskCategoriesController"],
-        summary: "Create TaskCategorie",
+        summary: "Create TaskCategories",
         operationId: "createTaskCategories",
         requestBody: {
           content: {
@@ -344,7 +344,7 @@ const swaggerDefinition = {
     "/TaskCategories/{CategoryID}": {
       get: {
         tags: ["TaskCategoriesController"],
-        summary: "Retrieve TaskCategorie",
+        summary: "Retrieve TaskCategory",
         operationId: "retrieveTaskCategory",
         parameters: [
           {
@@ -507,8 +507,8 @@ const swaggerDefinition = {
     "/TaskStatus": {
       get: {
         tags: ["TaskStatusController"],
-        summary: "Retrieve TaskStatuses",
-        operationId: "retrieveTaskStatuses",
+        summary: "Retrieve TaskStatus",
+        operationId: "retrieveTaskStatus",
         responses: {
           200: {
             description: "Array of TaskStatuses model instances",
@@ -517,7 +517,7 @@ const swaggerDefinition = {
                 schema: {
                   type: "array",
                   items: {
-                    $ref: "#/components/schemas/TaskStatuses",
+                    $ref: "#/components/schemas/TaskStatus",
                   },
                   "x-content-type": "application/json",
                 },
@@ -595,11 +595,11 @@ const swaggerDefinition = {
         "x-swagger-router-controller": "TaskStatusController",
       },
     },
-    "/TaskStatus/{id}": {
+    "/TaskStatus/{StatusID}": {
       get: {
         tags: ["TaskStatusController"],
-        summary: "Retrieve TaskStatus",
-        operationId: "retrieveTaskStatus",
+        summary: "Retrieve TaskStatuses",
+        operationId: "retrieveTaskStatuses",
         parameters: [
           {
             name: "StatusID",
@@ -849,7 +849,7 @@ const swaggerDefinition = {
         "x-swagger-router-controller": "TasksController",
       },
     },
-    "/Tasks/{id}": {
+    "/Tasks/{TaskID}": {
       get: {
         tags: ["TasksController"],
         summary: "Retrieve Task",

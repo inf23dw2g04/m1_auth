@@ -11,39 +11,39 @@ const AuthController = require('../Controllers/AuthController');
 
 // ---------- TaskStatusController ----------
 
-router.get('/TaskStatus', TaskStatusController.retrieveTaskStatuses);
+router.get('/TaskStatus', TaskStatusController.retrieveTaskStatus);
 router.post('/TaskStatus', auth, TaskStatusController.createTaskStatus);
 
-router.get('/TaskStatus/:id', TaskStatusController.retrieveTaskStatus);
-router.put('/TaskStatus/:id', auth, TaskStatusController.updateTaskStatus);
-router.delete('/TaskStatus/:id', auth, TaskStatusController.deleteTaskStatus);
+router.get('/TaskStatus/:StatusID', TaskStatusController.retrieveTaskStatuses);
+router.put('/TaskStatus/:StatusID', auth, TaskStatusController.updateTaskStatus);
+router.delete('/TaskStatus/:StatusID', auth, TaskStatusController.deleteTaskStatus);
 
 // ---------- TaskCategoriesController ----------
 
 router.get('/TaskCategories', TaskCategoriesController.retrieveTaskCategories);
 router.post('/TaskCategories', auth, TaskCategoriesController.createTaskCategories);
 
-router.get('/TaskCategories/:id', TaskCategoriesController.retrieveTaskCategory);
-router.put('/TaskCategories/:id', auth, TaskCategoriesController.updateTaskCategories);
-router.delete('/TaskCategories/:id', auth, TaskCategoriesController.deleteTaskCategories);
+router.get('/TaskCategories/:CategoryID', TaskCategoriesController.retrieveTaskCategory);
+router.put('/TaskCategories/:CategoryID', auth, TaskCategoriesController.updateTaskCategories);
+router.delete('/TaskCategories/:CategoryID', auth, TaskCategoriesController.deleteTaskCategories);
 
 // ---------- TaskController ----------
 
 router.get('/Tasks', TasksController.retrieveTasks);
 router.post('/Tasks', auth, TasksController.createTasks);
 
-router.get('/Tasks/:id', TasksController.retrieveTask);
-router.put('/Tasks/:id', auth, TasksController.updateTasks);
-router.delete('/Tasks/:id', auth, TasksController.deleteTasks);
+router.get('/Tasks/:TaskID', TasksController.retrieveTask);
+router.put('/Tasks/:TaskID', auth, TasksController.updateTasks);
+router.delete('/Tasks/:TaskID', auth, TasksController.deleteTasks);
 
 // ---------- UsersController ----------
 
 router.get('/Users', UsersController.retrieveUsers);
 router.post('/Users', auth, UsersController.createUsers);
 
-router.get('/Users/:id', UsersController.retrieveUser);
-router.put('/Users/:id', auth, UsersController.updateUsers);
-router.delete('/Users/:id', auth, UsersController.deleteUsers);
+router.get('/Users/:UserID', UsersController.retrieveUser);
+router.put('/Users/:UserID', auth, UsersController.updateUsers);
+router.delete('/Users/:UserID', auth, UsersController.deleteUsers);
 
 // ---------- AuthController ----------
 

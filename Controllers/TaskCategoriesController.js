@@ -1,56 +1,56 @@
-'use strict';
+var sql = require("../utils/db");
 
-var utils = require('../utils/writer.js');
-var TaskCategoriesController = require('../service/TaskCategoriesControllerService');
-
-module.exports.createTaskCategories = function createTaskCategories (req, res, next, body) {
-    TaskCategoriesController.createTaskCategories(body)
-  .then(TaskCategoriesController.retrieveTaskCategories)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const retrieveTaskCategories = (req, res) => {
+  sql.query("SELECT * FROM TaskCategories", function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
 };
 
-module.exports.deleteTaskCategories = function deleteTaskCategories (req, res, next, id) {
-    TaskCategoriesController.deleteTaskCategories(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const createTaskCategories = (req, res) => {
+  sql.query(
+    "INSERT INTO TaskCategories (CategoryID, CategoryName) Values (?,?)",
+    [
+      req.body.CategoryID,
+      req.body.CategoryName
+    ], 
+    function (err, result) {
+      if (err) throw err;
+      res.send(req.body);
+    }
+  );
 };
 
-module.exports.retrieveTaskCategory = function retrieveTaskCategory (req, res, next, id) {
-    TaskCategoriesController.retrieveTaskCategory(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const retrieveTaskCategory = (req, res) => {
+    sql.query(
+    "SELECT * FROM TaskCategories WHERE CategoryID = ?",
+    [req.params.CategoryID], 
+    function (err, result) {
+      if (err) throw err;
+      res.send(result);
+    }
+  );
 };
 
-module.exports.retrieveTaskCategories = function retrieveTaskCategories(req, res, next) {
-    TaskCategoriesController.retrieveTaskCategories()
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const deleteTaskCategories = (req, res) => {
+    sql.query(
+    "DELETE FROM TaskCategories WHERE CategoryID = ?", 
+    [req.params.CategoryID], 
+    function (err, result) {
+      if (err) throw err;
+      res.send("User " + req.params.CategoryID + " successfully deleted, You coward");
+    }
+  );
 };
 
-module.exports.updateTaskCategories = function updateTaskCategories(req, res, next, body, id) {
-    TaskCategoriesController.updateTaskCategories(body, id)
-  .then(TaskCategoriesController.retrieveTaskCategories)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const updateTaskCategories = (req, res) => {
+  sql.query(
+    "UPDATE TaskCategories SET CategoryName = ? WHERE CategoryID = ?",
+    [req.body.CategoryName, req.params.CategoryID],function (err, result) {
+      if (err) throw err;
+      res.send(req.body);
+    }
+  );
 };
+
+module.exports = {retrieveTaskCategories, retrieveTaskCategory, deleteTaskCategories, updateTaskCategories, createTaskCategories};

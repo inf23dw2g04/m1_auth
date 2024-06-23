@@ -1,56 +1,60 @@
-'use strict';
+var sql = require("../utils/db");
 
-var utils = require('../utils/writer.js');
-var TaskStatusController = require('../service/TaskStatusControllerService');
-
-module.exports.createTaskStatus = function createTaskStatus (req, res, next, body) {
-    TaskStatusController.createTaskStatus(body)
-  .then(TaskStatusController.retrieveTaskStatuses)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const retrieveTaskStatus = (req, res) => {
+  sql.query("SELECT * FROM TaskStatus", function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
 };
 
-module.exports.deleteTaskStatus = function deleteTaskStatus (req, res, next, id) {
-    TaskStatusController.deleteTaskStatus(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const createTaskStatus = (req, res) => {
+  sql.query(
+    "INSERT INTO TaskStatus (StatusID, StatusName) Values (?,?)",
+    [
+      req.body.StatusID,
+      req.body.StatusName
+    ],
+    function(err,result){
+      if (err) throw err;
+      res.send(req.body);
+    }
+  );
 };
 
-module.exports.retrieveTaskStatus = function retrieveTaskStatus(req, res, next, id) {
-    TaskStatusController.retrieveTaskStatus(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const retrieveTaskStatuses = (req, res) => {
+    sql.query(
+    "SELECT * FROM TaskStatus WHERE StatusID = ?",
+    [req.params.StatusID],
+    function (err, result) {
+      if (err) throw err;
+      res.send(result);
+    }
+  );
 };
 
-module.exports.retrieveTaskStatuses = function retrieveTaskStatuses (req, res, next) {
-    TaskStatusController.retrieveTaskStatuses()
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const deleteTaskStatus = (req, res) => {
+    sql.query(
+    "DELETE FROM TaskStatus WHERE StatusID = ?",
+    [req.params.StatusID],
+    function (err, result) {
+      if (err) throw err;
+      res.send("Task " + req.params.StatusID + " successfully deleted, You coward");
+    }
+  );
 };
 
-module.exports.updateTaskStatus = function updateTaskStatus (req, res, next, body, id) {
-    TaskStatusController.updateTaskStatus(body, id)
-  .then(TaskStatusController.retrieveTaskStatus)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const updateTaskStatus = (req, res) => {
+  sql.query(
+    "UPDATE TaskStatus set StatusName = ? WHERE StatusID = ?",
+    [
+      req.body.StatusName,
+      req.params.StatusID
+      ],
+      function(err,result){
+      if (err) throw err;
+      res.send(req.body);
+    }
+  );
 };
+
+module.exports = {retrieveTaskStatus, retrieveTaskStatuses, deleteTaskStatus, updateTaskStatus, createTaskStatus};

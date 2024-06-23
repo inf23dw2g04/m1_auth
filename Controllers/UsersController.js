@@ -1,56 +1,62 @@
-"use strict";
+var sql = require("../utils/db");
 
-var utils = require("../utils/writer.js");
-var UsersController = require("../service/UsersControllerService.js");
-
-module.exports.createUsers = function createUsers(req, res, next, body) {
-  UsersController.createUsers(body)
-    .then(UsersController.retrieveUsers)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const retrieveUsers = (req, res) => {
+  sql.query("SELECT * FROM Users", function (err, result) {
+    if (err) throw err;
+    res.send(result);
+  });
 };
 
-module.exports.deleteUsers = function deleteUsers(req, res, next, id) {
-  UsersController.deleteUsers(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const createUsers = (req, res) => {
+  sql.query(
+    "INSERT INTO Users (UserID, UserName, Email) Values (?,?,?)",
+    [
+      req.body.UserID,
+      req.body.UserName,
+      req.body.Email,
+    ],
+    function (err, result) {
+      if (err) throw err;
+      res.send(req.body);
+    }
+  );
 };
 
-module.exports.retrieveUser = function retrieveUser(req, res, next, id) {
-  UsersController.retrieveUser(id)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const retrieveUser = (req, res) => {
+    sql.query(
+    "SELECT * FROM Users WHERE UserID = ?",
+    [req.params.UserID],
+    function (err, result) {
+      if (err) throw err;
+      res.send(result);
+    }
+  );
 };
 
-module.exports.retrieveUsers = function retrieveUsers(req, res, next) {
-  UsersController.retrieveUsers()
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const deleteUsers = (req, res) => {
+    sql.query(
+    "DELETE FROM Users WHERE UserID = ?",
+    [req.params.UserID],
+    function (err, result) {
+      if (err) throw err;
+      res.send("User " + req.params.UserID + " successfully deleted, You coward");
+    }
+  );
 };
 
-module.exports.updateUsers = function updateUsers(req, res, next, body, id) {
-  UsersController.updateUsers(body, id)
-    .then(UsersController.retrieveUsers)
-    .then(function (response) {
-      utils.writeJson(res, response);
-    })
-    .catch(function (response) {
-      utils.writeJson(res, response);
-    });
+const updateUsers = (req, res) => {
+  sql.query(
+    "UPDATE Users SET UserName = ?, Email = ? WHERE UserID = ?",
+    [
+      req.body.UserName,
+      req.body.Email,
+      req.params.UserID,
+    ],
+    function (err, result) {
+      if (err) throw err;
+      res.send(req.body);
+    }
+  );
 };
+
+module.exports = {retrieveUsers, retrieveUser, deleteUsers, updateUsers, createUsers};
