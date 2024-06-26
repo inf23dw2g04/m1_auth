@@ -9,9 +9,9 @@ This project is an implementation of a task management system utilizing OAuth 2.
 ## Repository organization
 
 _Please help reader navigate around describing how the repository is organized by providing links_
-* **Source code** is in the [src folder](src/).
-* Report chapters are in [doc folder](doc/).
-* Initial [OpenApi document](api/openapi.yaml)
+* **Source code** is in the [src folder](m1_auth/).
+* Report chapters are in [doc folder](https://github.com/inf23dw2g04/m1_auth/tree/87ad19417134d7fd110909cee4a6e6486e24fc00/docs).
+
 
 ## Gallery
 
