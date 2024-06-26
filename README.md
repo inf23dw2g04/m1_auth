@@ -21,8 +21,8 @@ _Please help reader navigate around describing how the repository is organized b
 | Login Page  | ![Drag Racing]()       |
 | Home Page | ![Drag Racing]()       |
 | Users Controllers      | ![Drag Racing]()       |
-| Task Controllers   | ![Drag Racing]()       |
-| TaskStatus Controllers | ![Drag Racing]()       |
+| Task Controllers   | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/task%20controllers.png)       |
+| TaskStatus Controllers | ![[Drag Racing]()](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/taskstatus%20controller.png)       |
 | TaskCategories Controllers      | ![Drag Racing]()       |
 | Docker Containers   | ![[Drag Racing](./prints/containers docker.png)](https://github.com/inf23dw2g04/m1_auth/blob/ffd82e6b820abd8b9df73962ef90471c56171204/prints/containers%20docker.png)       |
 
