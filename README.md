@@ -8,7 +8,6 @@ This project is an implementation of a task management system utilizing OAuth 2.
 
 ## Repository organization
 
-_Please help reader navigate around describing how the repository is organized by providing links_
 * Report chapters are in [doc folder](https://github.com/inf23dw2g04/m1_auth/tree/87ad19417134d7fd110909cee4a6e6486e24fc00/docs).
 * Screenshots are in the [prints folder](https://github.com/inf23dw2g04/m1_auth/tree/ffe74d09e8303b5bc89a785097a6f44a4885cccd/prints).
 
@@ -28,7 +27,6 @@ _Please help reader navigate around describing how the repository is organized b
 
 ## Technologies
 
-_Indicate the technologies you have used in this assignment. Please provide links for the user to read more about those technologies._
 * [HTML5](https://html.spec.whatwg.org/multipage/) + [CSS3](https://www.w3.org/Style/CSS/)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 * [PHP](https://www.php.net/)
@@ -37,7 +35,6 @@ _Indicate the technologies you have used in this assignment. Please provide link
 
 ### Frameworks and Libraries
 
-_Did you use any aditional libraries? Describe them here._
 * Docker: Used for containerizing the application and its dependencies.
 * NodeJS: Backend runtime for building the API.
 * Express.js: Framework used for building the RESTful API.
