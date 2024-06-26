@@ -42,7 +42,6 @@ This project is an implementation of a task management system utilizing OAuth 2.
 * Swagger: For API documentation and testing.
 * JQuery: For handling JavaScript operations on the frontend.
 * Bootstrap: For styling and responsive design.
-* ReactJS: For building the user interface.
 * GitHub OAuth 2.0: For user authentication.
 
 
