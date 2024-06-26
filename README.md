@@ -16,8 +16,8 @@ This project is an implementation of a task management system utilizing OAuth 2.
 
 | Page      | Image |
 | ----------- | ----------- |
-| Sign in Page      | ![Drag Racing](prints/login.png)       |
-| Login Page  | ![Drag Racing](prints/loginemail.png)       |
+| Sign in Page      | ![Drag Racing](prints/loginemail.png)       |
+| Login Page  | ![Drag Racing](prints/login.png)       |
 | Home Page | ![Drag Racing](prints/home.png)       |
 | Users Controllers      | ![Drag Racing](prints/userscontroller.png)       |
 | Task Controllers   | ![Drag Racing](prints/taskcontrollers.png)       |
