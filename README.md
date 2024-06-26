@@ -8,21 +8,21 @@ This project is an implementation of a task management system utilizing OAuth 2.
 
 ## Repository organization
 
-* Report chapters are in [doc folder](https://github.com/inf23dw2g04/m1_auth/tree/87ad19417134d7fd110909cee4a6e6486e24fc00/docs).
-* Screenshots are in the [prints folder](https://github.com/inf23dw2g04/m1_auth/tree/ffe74d09e8303b5bc89a785097a6f44a4885cccd/prints).
+* Report chapters are in [doc folder](docs).
+* Screenshots are in the [prints folder](prints).
 
 
 ## Gallery
 
 | Page      | Image |
 | ----------- | ----------- |
-| Sign in Page      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/login.png)       |
-| Login Page  | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/login%20email.png)       |
-| Home Page | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/home.png)       |
-| Users Controllers      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/userscontroller.png)       |
-| Task Controllers   | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/task%20controllers.png)       |
-| TaskStatus Controllers | ![[Drag Racing]()](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/taskstatus%20controller.png)       |
-| TaskCategories Controllers      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/taskcategories%20controller.png)       |
+| Sign in Page      | ![Drag Racing](prints/login.png)       |
+| Login Page  | ![Drag Racing](prints/loginemail.png)       |
+| Home Page | ![Drag Racing](prints/home.png)       |
+| Users Controllers      | ![Drag Racing](prints/userscontroller.png)       |
+| Task Controllers   | ![Drag Racing](prints/taskcontrollers.png)       |
+| TaskStatus Controllers | ![[Drag Racing]()](prints/taskstatuscontroller.png)       |
+| TaskCategories Controllers      | ![Drag Racing](prints/taskcategoriescontroller.png)       |
 | Docker Containers   | ![Drag Racing](prints/containersdocker.png)       |
 
 ## Technologies
@@ -46,11 +46,11 @@ This project is an implementation of a task management system utilizing OAuth 2.
 
 
 ### Project presentation
-* Chapter 1 :[Project presentation](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Product.md)
+* Chapter 1 :[Project presentation](docs/projectpresentation.md)
 ### Resources
-* Chapter 2 :[Resources](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Resources.md)
+* Chapter 2 :[Resources](docs/Resources.md)
 ### Product
-* Chapter 3 :[Product](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/projectpresentation.md)
+* Chapter 3 :[Product](docs/Product.md)
 
 
 ## Grupo _04_
