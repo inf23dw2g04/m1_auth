@@ -4,7 +4,7 @@ Repository to host the project developed for Desenvolvimento Web II, a 2024 subj
 
 ## Short theme description
 
-An example report using markdown on Github. This documentation is writen using [Markdown](https://www.markdownguide.org/). Here is a [link to the basic syntax](https://www.markdownguide.org/basic-syntax), but an [extended syntax](https://www.markdownguide.org/extended-syntax/) is also available. If you're starting with Markdown, you may want to try a [Markdown Tutorial](https://www.markdowntutorial.com/) and read the [getting started](https://www.markdownguide.org/getting-started/) section.
+This project is an implementation of a task management system utilizing OAuth 2.0 for authentication via GitHub. It is developed to showcase a structured approach to handling various aspects of task management through a set of well-defined RESTful APIs. The project includes Dockerized containers for easy deployment and integration.
 
 ## Repository organization
 
@@ -45,15 +45,13 @@ _Did you use any aditional libraries? Describe them here._
 * Bootstrap
 * ReactJS
 
-## Report
-_Please add at least on section (a file) per Chapter. But you can add more._
 
 ### Project presentation
-* Chapter 1: [Project presentation](doc_P1/c1.md)
+* Chapter 1: [Project presentation]([doc_P1/c1.md](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Product.md))
 ### Resources
-* Chapter 2: [Resources](doc_P1/c2.md)
+* Chapter 2: [Resources]([doc_P1/c2.md](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Resources.md))
 ### Product
-* Chapter 3: [Product](doc_P1/c3.md)
+* Chapter 3: [Product]([doc_P1/c3.md](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/projectpresentation.md))
 
 
 ## Grupo _04_
