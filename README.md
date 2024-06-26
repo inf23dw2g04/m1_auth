@@ -17,13 +17,13 @@ _Please help reader navigate around describing how the repository is organized b
 
 | Page      | Image |
 | ----------- | ----------- |
-| Sign in Page      | ![Drag Racing]()       |
-| Login Page  | ![Drag Racing]()       |
-| Home Page | ![Drag Racing]()       |
-| Users Controllers      | ![Drag Racing]()       |
+| Sign in Page      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/login.png)       |
+| Login Page  | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/login%20email.png)       |
+| Home Page | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/home.png)       |
+| Users Controllers      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/userscontroller.png)       |
 | Task Controllers   | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/task%20controllers.png)       |
 | TaskStatus Controllers | ![[Drag Racing]()](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/taskstatus%20controller.png)       |
-| TaskCategories Controllers      | ![Drag Racing]()       |
+| TaskCategories Controllers      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/taskcategories%20controller.png)       |
 | Docker Containers   | ![[Drag Racing](./prints/containers docker.png)](https://github.com/inf23dw2g04/m1_auth/blob/ffd82e6b820abd8b9df73962ef90471c56171204/prints/containers%20docker.png)       |
 
 ## Technologies
@@ -34,7 +34,7 @@ _Indicate the technologies you have used in this assignment. Please provide link
 * [Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 * [PHP](https://www.php.net/)
 * [nodeJS](https://nodejs.org/en/)
-* _Any other?_
+
 
 ### Frameworks and Libraries
 
