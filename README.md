@@ -1,6 +1,6 @@
 # My work assignment Title
 
-Repository to host the project developed for 'some class', a n^th^ year subject at SOMESCHOOL. Developed by Group ALPHA : [@MarcoOliveira](https://github.com/marcoamarooliveira), [add others].
+Repository to host the project developed for Desenvolvimento Web II, a 2024 subject at UMAIA. Developed by Group 4 : [@pedropires64](https://github.com/pedropires64), [@TiagoBaganha](https://github.com/TiagoBaganha) and [@Duarte35](https://github.com/Duarte35].
 
 ## Short theme description
 
