@@ -15,8 +15,16 @@ _Please help reader navigate around describing how the repository is organized b
 
 ## Gallery
 
-_Please provide a galery of the final result, with small images_
-A [table](https://www.markdownguide.org/extended-syntax/#tables) may be usefull to organize the images.
+| Page      | Image |
+| ----------- | ----------- |
+| Sign in Page      | ![Drag Racing]()       |
+| Login Page  | ![Drag Racing]()       |
+| Home Page | ![Drag Racing]()       |
+| Users Controllers      | ![Drag Racing]()       |
+| Task Controllers   | ![Drag Racing]()       |
+| TaskStatus Controllers | ![Drag Racing]()       |
+| TaskCategories Controllers      | ![Drag Racing]()       |
+| Docker Containers   | ![[Drag Racing](./prints/containers docker.png)](https://github.com/inf23dw2g04/m1_auth/blob/ffd82e6b820abd8b9df73962ef90471c56171204/prints/containers%20docker.png)       |
 
 ## Technologies
 
