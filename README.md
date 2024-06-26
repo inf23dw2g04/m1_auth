@@ -47,11 +47,11 @@ _Did you use any aditional libraries? Describe them here._
 
 
 ### Project presentation
-* Chapter 1: [Project presentation]((https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Product.md))
+* Chapter 1: [Project presentation](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Product.md)
 ### Resources
 * Chapter 2: [Resources](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/Resources.md)
 ### Product
-* Chapter 3: [Product]((https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/projectpresentation.md))
+* Chapter 3: [Product](https://github.com/inf23dw2g04/m1_auth/blob/8caba60bc80a5222618b35b9ab91aa2e1677f591/docs/projectpresentation.md)
 
 
 ## Grupo _04_
