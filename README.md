@@ -29,7 +29,6 @@ _Please help reader navigate around describing how the repository is organized b
 ## Technologies
 
 _Indicate the technologies you have used in this assignment. Please provide links for the user to read more about those technologies._
-* [XML](https://www.w3.org/XML/)
 * [HTML5](https://html.spec.whatwg.org/multipage/) + [CSS3](https://www.w3.org/Style/CSS/)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 * [PHP](https://www.php.net/)
@@ -39,11 +38,15 @@ _Indicate the technologies you have used in this assignment. Please provide link
 ### Frameworks and Libraries
 
 _Did you use any aditional libraries? Describe them here._
-* Docker
-* NodeJS
-* JQuery
-* Bootstrap
-* ReactJS
+* Docker: Used for containerizing the application and its dependencies.
+* NodeJS: Backend runtime for building the API.
+* Express.js: Framework used for building the RESTful API.
+* Passport.js: Middleware for authentication, specifically with GitHub OAuth 2.0 in this project.
+* Swagger: For API documentation and testing.
+* JQuery: For handling JavaScript operations on the frontend.
+* Bootstrap: For styling and responsive design.
+* ReactJS: For building the user interface.
+* GitHub OAuth 2.0: For user authentication.
 
 
 ### Project presentation
