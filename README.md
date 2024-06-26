@@ -23,7 +23,7 @@ This project is an implementation of a task management system utilizing OAuth 2.
 | Task Controllers   | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/task%20controllers.png)       |
 | TaskStatus Controllers | ![[Drag Racing]()](https://github.com/inf23dw2g04/m1_auth/blob/68aabe1304f6cb326d8c2dd543741b605626c0a7/prints/taskstatus%20controller.png)       |
 | TaskCategories Controllers      | ![Drag Racing](https://github.com/inf23dw2g04/m1_auth/blob/cc75bd230b71a8eca46d14f72f03cbc7a99fc458/prints/taskcategories%20controller.png)       |
-| Docker Containers   | ![[Drag Racing](./prints/containers docker.png)](https://github.com/inf23dw2g04/m1_auth/blob/ffd82e6b820abd8b9df73962ef90471c56171204/prints/containers%20docker.png)       |
+| Docker Containers   | ![[Drag Racing](prints/containers docker.png)       |
 
 ## Technologies
 
